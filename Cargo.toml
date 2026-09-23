@@ -1,0 +1,18 @@
+[package]
+name = "smtpcatch"
+version = "0.1.0"
+edition = "2021"
+description = "A headless, dummy SMTP server that prints incoming emails to stdout"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/smtpcatch"
+readme = "README.md"
+keywords = ["smtp", "mailhog", "testing", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+colored = "2"
+mailparse = "0.14"
